@@ -13,6 +13,10 @@ body {
   line-height: 1.5;
 }
 
+.box {
+  display: flex;
+}
+
 .transaction-table {
   border-collapse: collapse;
 }
