@@ -13,6 +13,16 @@ body {
   line-height: 1.5;
 }
 
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
 .transaction-table {
   border-collapse: collapse;
 }
@@ -31,4 +41,14 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.gallery-img {
+  flex-basis: calc((100% - 48px) / 3);
 }
