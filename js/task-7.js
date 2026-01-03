@@ -64,4 +64,13 @@ form.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
+
+  const elements = event.target.elements;
+
+  const queryValue = elements.query.value;
+  const optionsValue = elements.options.value;
+  const result = cars.filter((car) =>
+    car[optionsValue].toLowerCase().includes(queryValue.toLowerCase().trim())
+  );
+  contaiter.innerHTML = createMarkup(result);
 }
